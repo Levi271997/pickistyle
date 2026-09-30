@@ -1,6 +1,5 @@
 # pickistyle
-extension that gets color hexcode and font style
-
+I made an extension for our browsers. this is completly free
 
 It works in Chrome, Edge, Brave and other Chromium browsers. All the files pass a syntax check, but I haven't loaded it in a browser and tried it, so please do a quick test.
 
