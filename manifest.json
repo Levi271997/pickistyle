@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Style Eyedropper",
+  "version": "1.0.0",
+  "description": "Pick colors, font families and font sizes from any web page.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Style Eyedropper",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "pick-color": {
+      "suggested_key": { "default": "Alt+Shift+C" },
+      "description": "Pick a color from the page"
+    },
+    "pick-font-family": {
+      "suggested_key": { "default": "Alt+Shift+F" },
+      "description": "Pick a font family from the page"
+    },
+    "pick-font-size": {
+      "suggested_key": { "default": "Alt+Shift+S" },
+      "description": "Pick a font size from the page"
+    }
+  }
+}

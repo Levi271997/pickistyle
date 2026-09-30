@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Style Eyedropper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon32.png" alt="" width="20" height="20">
+    <h1>Style Eyedropper</h1>
+  </header>
+
+  <div class="tools">
+    <button class="tool" data-mode="color">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8a2.1 2.1 0 1 1 3-3l.4.4Z"/></svg>
+      <span class="name">Color</span>
+      <kbd>Alt+Shift+C</kbd>
+    </button>
+    <button class="tool" data-mode="fontFamily">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+      <span class="name">Font family</span>
+      <kbd>Alt+Shift+F</kbd>
+    </button>
+    <button class="tool" data-mode="fontSize">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7V5h11v2"/><path d="M8.5 5v14"/><path d="M6 19h5"/><path d="M14 13v-1h7v1"/><path d="M17.5 12v7"/><path d="M16 19h3"/></svg>
+      <span class="name">Font size</span>
+      <kbd>Alt+Shift+S</kbd>
+    </button>
+  </div>
+
+  <div class="setting">
+    <span>Color format</span>
+    <div class="segmented" role="radiogroup" aria-label="Color format">
+      <button data-format="hex" role="radio">HEX</button>
+      <button data-format="rgb" role="radio">RGB</button>
+      <button data-format="hsl" role="radio">HSL</button>
+    </div>
+  </div>
+
+  <p class="error" hidden></p>
+
+  <section>
+    <div class="section-head">
+      <h2>History</h2>
+      <button class="link" id="clear">Clear</button>
+    </div>
+    <ul id="history"></ul>
+    <p class="empty" id="empty">Picked values appear here. Click one to copy it.</p>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
