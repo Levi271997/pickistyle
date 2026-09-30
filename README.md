@@ -25,4 +25,3 @@ The color picker works from a screenshot of the visible page. It takes a new one
 The displayed font is detected by measuring text, which is reliable for installed and web fonts but not guaranteed in every case.
 Browsers don't allow extensions on their own pages (like chrome:// pages or the extension store) or in the PDF viewer. The panel shows a message if you try.
 If a shortcut clashes with another one, you can change it at chrome://extensions/shortcuts.
-For the name, tell me which one you like (Style Eyedropper, PickStyle, Swatch & Type, TypeTone or Stylesnatch) and I'll update manifest.json and the popup header.
